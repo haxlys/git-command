@@ -1,14 +1,14 @@
 # git-command
 깃 명령어 공략집  
-자주는 아니지만 간간히 사용되는 명령어를 기록해서 명령어 퍼즐조각들을 맞춰보자.
-[마크다운 문법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+자주는 아니지만 간간히 사용되는 명령어를 기록해서 명령어 퍼즐조각들을 맞춰보자.  
+[마크다운 문법](https://gist.github.com/ihoneymon/652be052a0727ad59601)  
 
 ## local branch와 trank remote branch
-https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
+https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch  
 local 컴퓨터에는 remote branch와 local branch가 함께 있다.  
-git fetch 실행하면 local 컴퓨터에 있는 remote branch 를 최신화하게 된다.
-local branch를 최신화하고 싶다면 git merge 명령어를 통해서 git fetch로 가져온 local 컴퓨터에 있는 remote branch로 부터 소스를 가져와 local branch와 병합을 한다.
-git pull하면 직접적으로 원격서버와 통신하여 다이렉트로 병합을 시도하는것 처럼 보이지만 내부적으로는 이런 시스템으로 병합을 하게 된다.
+git fetch 실행하면 local 컴퓨터에 있는 remote branch 를 최신화하게 된다.  
+local branch를 최신화하고 싶다면 git merge 명령어를 통해서 git fetch로 가져온 local 컴퓨터에 있는 remote branch로 부터 소스를 가져와 local branch와 병합을 한다.  
+git pull하면 직접적으로 원격서버와 통신하여 다이렉트로 병합을 시도하는것 처럼 보이지만 내부적으로는 이런 시스템으로 병합을 하게 된다.  
 
 merge는 결국 세 가지 경우가 있다.  
 해당 branch가 추적(tracked)하는 remote branch와 병합 -> git pull *remote명 현재branch명*  
@@ -25,6 +25,8 @@ $ git checkout --track *remote명/branch명* -> remote branch이름으로 local 
 $ git branch -u *remote명/branch명*  
 ### upstream branch가 없는 현재 local branch를 push와 함께 upstream branch 할당
 $ git push -u *remote명 branch명*  
+
+위 명령어를 통해서 upstream branch를 설정했다면 git pull, git push 명령어 만으로 설정된 remote branch로 push pull을 할 수 있다.
 
 ## config
 $ git config --list  
