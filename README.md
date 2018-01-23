@@ -61,4 +61,4 @@ $ git add -A
 삭제를 제외한 변경, 새로운 파일을 stage에 올림  
 $ git add .   
 새로운 파일을 제외한 변경, 삭제된 파일을 stage에 올림  
-$ git add -u stages modified and deleted, without new
+$ git add -u
