@@ -3,7 +3,7 @@
 자주는 아니지만 간간히 사용되는 명령어를 기록해서 명령어 퍼즐조각들을 맞춰보자.  
 [마크다운 문법](https://gist.github.com/ihoneymon/652be052a0727ad59601)  
 
-## local branch와 trank remote branch
+## local branch와 track remote branch
 https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch  
 local 컴퓨터에는 remote branch와 local branch가 함께 있다.  
 git fetch 실행하면 local 컴퓨터에 있는 remote branch 를 최신화하게 된다.  
