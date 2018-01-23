@@ -54,3 +54,11 @@ ahead는 로컬의 앞서가는 commit 갯수, behind는 리모트에서 받지 
 
 **remote 정보 가져오기**
 git remote show *리모트 저장소 이름*
+
+## add
+모든 변경, 삭제, 새로운 파일을 stage에 올림
+$ git add -A
+삭제를 제외한 변경, 새로운 파일을 stage에 올림
+$ git add . 
+새로운 파일을 제외한 변경, 삭제된 파일을 stage에 올림
+$ git add -u stages modified and deleted, without new
