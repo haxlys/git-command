@@ -16,7 +16,7 @@ merge는 결국 세 가지 경우가 있다.
 다른 remote branch와 병합 -> git pull *remote명 branch명*  
 
 첫번째와 세번째 경우는 똑같다고 할 수 있다.  
-여기서 첫번째 경우에 더 간단히 git pull 만으로 remote branch와 병합할 수 있는 방법은 upstream branch 를 설정해준다.  
+여기서 첫번째 경우에 더 간단히 git pull 만으로 remote branch와 병합할 수 있는 방법은 upstream branch 를 설정해주는 것이다. 
 
 ### branch 생성시 기존에 있던 remote branch를 upstream branch로 설정하는 경우
 $ git checkout -b *branch remote명/branch명* -> local branch명을 upstream branch와 이름을 다르게 할 필요가 있을 때 사용.
