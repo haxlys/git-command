@@ -64,20 +64,20 @@ $ git add .
 $ git add -u
 
 ## commit
-직전 커밋에 변경된 내용을 추가하여 이력을 쌓고 싶을 때 --amend 라는 옵션값을 주면된다.
-하지만 직전 커밋이 아닌 더 이전의 커밋에 이력을 추가 하고 싶다면 조금 복잡하다.
-방법은 아래와 같다. log 에서 추가할 커밋 위치를 확인한다.
-$ git rebase -i HEAD~2 // 두번째 커밋 이전까지 rebase
-편집기가 열리면 추가할 commit 을 찾아 pick 부분을 edit 으로 변경한 후 저장 종료한다.
-코드를 변경한 후 
-$ git add
-$ git commit --amend
-$ git rebase --continue
-하면 rebase --continue 할 경우 충돌날 수도 있다. 그럴 땐 충돌 코드를 수정한 후
-$ git add
-$ git rebase --continue
-해준다. commit해줄 필요는 없다.
-[HEAD ^ ~ 차이](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git) 
+직전 커밋에 변경된 내용을 추가하여 이력을 쌓고 싶을 때 --amend 라는 옵션값을 주면된다.  
+하지만 직전 커밋이 아닌 더 이전의 커밋에 이력을 추가 하고 싶다면 조금 복잡하다.  
+방법은 아래와 같다. log 에서 추가할 커밋 위치를 확인한다.  
+$ git rebase -i HEAD~2 // 두번째 커밋 이전까지 rebase  
+편집기가 열리면 추가할 commit 을 찾아 pick 부분을 edit 으로 변경한 후 저장 종료한다.  
+코드를 변경한 후   
+$ git add  
+$ git commit --amend  
+$ git rebase --continue  
+하면 rebase --continue 할 경우 충돌날 수도 있다. 그럴 땐 충돌 코드를 수정한 후  
+$ git add  
+$ git rebase --continue  
+해준다. commit해줄 필요는 없다.  
+[HEAD ^ ~ 차이](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git)   
 
 
 
