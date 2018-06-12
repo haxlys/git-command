@@ -83,7 +83,7 @@ $ git rebase --continue
 merge 후 충돌난 상태에서 merge하기 전상태로 되돌릴 때  
 $ git merge --abort  
 다른 브랜치와 merge 할 때 커밋이력을 단일이력을 변경하고자 할 때(merge 할 경우 merge하는 브랜치의 커밋이력을 모두 가져오기 때문에 보통 배포 branch에서 커밋이력을 좀더 단순하게 만들경우 사용)  
-$ git merge --sqaush *branch명*
+$ git merge --squash *branch명*
 
 ## stash
 작업도중 임시저장이 필요한 경우 사용  
