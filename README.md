@@ -2,6 +2,7 @@
 깃 명령어 공략집  
 자주는 아니지만 간간히 사용되는 명령어를 기록해서 명령어 퍼즐조각들을 맞춰보자.  
 [마크다운 문법](https://gist.github.com/ihoneymon/652be052a0727ad59601)  
+[git GUI로 배우기](https://learngitbranching.js.org/)  
 
 ## local branch와 track remote branch
 https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch  
@@ -39,9 +40,16 @@ $ git branch -v
 **-v 옵션 내용과 더불어 upstream branch도 보여줌**  
 $ git branch -vv  
 
+**원격 브랜치와 함께보기**
+git branch -a
+git branch -av
+
 **현재 위치한 branch와 merge된 or merge되지 않은 branch 목록**  
 $ git branch --merged  
 $ git branch --no-merged
+
+**현재 브랜치와 다른 브랜치 commit 위치 옮기기**  
+$ git branch -f 브랜치명 커밋위치
 
 **원격서버 branch 삭제**  
 $ git push origin --delete *branch명*    
